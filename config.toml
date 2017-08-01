@@ -23,7 +23,7 @@ canonifyurls = true
 metaDataFormat = "toml"
 
 # Theme to use (located in /themes/THEMENAME/)
-#theme = "hugo-bootstrap-premium"
+theme = "hugo-bootstrap-premium"
 # Pagination
 paginate = 10
 paginatePath = "page"
