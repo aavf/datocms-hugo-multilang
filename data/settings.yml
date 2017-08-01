@@ -1,0 +1,9 @@
+name: null
+language: en
+intro: intro text
+copyright: ©2017 António
+socialProfiles:
+  - type: twitter
+    url: 'https://twitter.com/antvar_'
+  - type: email
+    url: 'mailto:antonioavf@gmail.com'

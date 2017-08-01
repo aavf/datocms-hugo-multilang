@@ -1,0 +1,6 @@
+.env
+node_modules
+public
+content
+npm-debug.log
+themes/hugo-bootstrap-premium
