@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build:hugo": "NODE_ENV=production hugo -t hugo-bootstrap-premium",
+    "build:hugo": "hugo -t hugo-bootstrap-premium",
     "build:datocms": "dato dump",
     "build": "npm run build:datocms && npm run build:hugo",
     "start:hugo": "hugo server -w -t hugo-bootstrap-premium",
