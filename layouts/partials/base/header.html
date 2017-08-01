@@ -8,7 +8,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        {{ if ( ne .Site.Title "" )}}
+        {{ if and ( ne .Site.Title "" ) ( eq .Site.Params.BrandImage "" )}}
         <a class="navbar-brand" href="{{ .Site.BaseURL | relLangURL}}">
           {{ .Site.Title }}
           {{ end }}
@@ -41,7 +41,7 @@
               </a>
             </li>
             {{ end }}
-            {{ end }}
+            {{ end }}  
           </ul>
         </div>
         <!--/.nav-collapse -->

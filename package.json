@@ -4,10 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build:hugo": "hugo -t hugo-bootstrap-premium",
+    "build:hugo": "NODE_ENV=production hugo",
     "build:datocms": "dato dump",
     "build": "npm run build:datocms && npm run build:hugo",
-    "start:hugo": "hugo server -w -t hugo-bootstrap-premium",
+    "start:hugo": "hugo server -w",
     "start:datocms": "dato dump --watch",
     "start": "dato check && concurrently -p \"[{name}]\" -c \"blue,red,green,yellow\" -k -n hugo,dato \"npm run start:hugo\" \"npm run start:datocms\""
   },
