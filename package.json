@@ -1,0 +1,29 @@
+{
+  "name": "datocms-hugo-multilang",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build:hugo": "NODE_ENV=production hugo",
+    "build:datocms": "dato dump",
+    "build": "npm run build:datocms && npm run build:hugo",
+    "start:hugo": "hugo server -w",
+    "start:datocms": "dato dump --watch",
+    "start": "dato check && concurrently -p \"[{name}]\" -c \"blue,red,green,yellow\" -k -n hugo,dato \"npm run start:hugo\" \"npm run start:datocms\""
+  },
+  "devDependencies": {
+    "concurrently": "^3.1.0",
+    "datocms-client": "^0.3.25",
+    "html-tag": "^0.2.1"
+  },
+  "description": "This repo contains a working static website written with [Hugo](http://gohugo.io/), integrated with content coming from a [DatoCMS](https://www.datocms.com) administrative area.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antvar/datocms-hugo-multilang.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/antvar/datocms-hugo-multilang/issues"
+  },
+  "homepage": "https://github.com/antvar/datocms-hugo-multilang#readme"
+}
